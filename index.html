@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envious Furniture Emporium</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #8B4513, #D2691E);
+            font-family: 'serif';
+            color: #2F4F4F;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            background: #F5DEB3;
+            padding: 25px;
+            border: 5px solid #8B4513;
+            border-radius: 15px;
+            font-size: 2.5em;
+            color: #800000;
+        }
+        
+        .furniture-item {
+            background: rgba(245, 222, 179, 0.9);
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid #A0522D;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .jealousy-level {
+            background: #FF4500;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .complaint {
+            color: #8B0000;
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        .price {
+            background: #228B22;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .warning {
+            background: #FFD700;
+            color: #8B0000;
+            padding: 15px;
+            text-align: center;
+            border: 3px dashed #FF6347;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .store-hours {
+            background: #4682B4;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        /* Remove emoji animation */
+    </style>
+</head>
+
+<body>
+    <h1>ENVIOUS FURNITURE EMPORIUM</h1>
+
+    <div class="warning">
+        ALL FURNITURE HAS SERIOUS EMOTIONAL BAGGAGE
+    </div>
+    <img style="margin-left: 500px;" src="data:image/webp;base64,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"
+        alt="">
+
+    <div class="furniture-item">
+        <div class="jealousy-level">EXTREMELY JEALOUS</div>
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=200&q=80" alt="Leather Sofa" style="width:120px;float:right;border-radius:8px;margin-left:20px;">
+        <h3>Bitter Leather Sofa</h3>
+        <div class="complaint">"Why does everyone sit on ME but compliment the coffee table? I'm the centerpiece!"</div>
+        <div class="price">$899 (therapy not included)</div>
+    </div>
+
+    <div class="furniture-item">
+        <div class="jealousy-level">MODERATELY ENVIOUS</div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=80" alt="Dining Chair" style="width:120px;float:right;border-radius:8px;margin-left:20px;">
+        <h3>Resentful Dining Chair</h3>
+        <div class="complaint">"That armchair gets all the respect! I support people's backs too, you know!"</div>
+        <div class="price">$149 each (set of 4 for extra drama)</div>
+    </div>
+
+    <div class="furniture-item">
+        <div class="jealousy-level">PATHOLOGICALLY JEALOUS</div>
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=200&q=80" alt="King Bed" style="width:120px;float:right;border-radius:8px;margin-left:20px;">
+        <h3>Insecure King Bed</h3>
+        <div class="complaint">"Everyone loves that fancy mattress store bed in the commercials. What about ME?!"</div>
+        <div class="price">$1,299 (includes built-in crying sounds)</div>
+    </div>
+
+    <div class="furniture-item">
+        <div class="jealousy-level">MILDLY BITTER</div>
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=200&q=80" alt="Bookshelf" style="width:120px;float:right;border-radius:8px;margin-left:20px;">
+        <h3>Neglected Bookshelf</h3>
+        <div class="complaint">"Nobody reads anymore. They just put fake plants on me. I have feelings too!"</div>
+        <div class="price">$299 (comes with tissues)</div>
+    </div>
+
+    <div class="store-hours">
+        <strong>HOURS:</strong><br> Monday-Friday: 9 AM - 8 PM<br> Saturday: 10 AM - 6 PM<br> Sunday: Closed (furniture needs therapy day)<br><br>
+        <em>"Where every piece has a grudge to settle!"</em>
+    </div>
+</body>
+
+</html>
